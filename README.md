@@ -11,9 +11,10 @@ Digital Object Identifier: 10.1109/TIP.2023.3266171
 
   Low-light images incur several complicated degradation factors such as poor brightness, low contrast, color degradation, and noise. Most previous deep learning-based approaches, however, only learn the mapping relationship of single channel between the input low-light images and the expected normal-light images, which is insufficient enough to deal with low-light images captured under uncertain imaging environment. Moreover, too deeper network architecture is not conducive to recover low-light images due to extremely low values in pixels. To surmount aforementioned issues, in this paper we propose a novel multi-branch and progressive network (MBPNet) for low-light image enhancement. To be more specific, the proposed MBPNet is comprised of four different branches which build the mapping relationship at different scales. The followed fusion is performed on the outputs obtained from four different branches for the final enhanced image. Furthermore, to better handle the difficulty of delivering structural information of low-light images with low values in pixels, a progressive enhancement strategy is applied in the proposed method, where four convolutional long short-term memory networks (LSTM) are embedded in four branches and an recurrent network architecture is developed to iteratively perform the enhancement process. In addition, a joint loss function consisting of the pixel loss, the multi-scale perceptual loss, the adversarial loss, the gradient loss, and the color loss is framed to optimize the model parameters. To evaluate the effectiveness of proposed MBPNet, three popularly used benchmark databases are used for both quantitative and qualitative assessments. The experimental results confirm that the proposed MBPNet obviously outperforms other state-of-the-art approaches in terms of quantitative and qualitative results.
 
-![20230427214203](https://user-images.githubusercontent.com/97494153/234880605-20718611-fa59-49eb-9408-6e447fa9e7b3.png)  
+## Model Architecture
+![image](https://github.com/kbzhang0505/MBPNet/blob/main/fig_1.png) 
 Architecture of proposed MBPNet.
-![2](https://user-images.githubusercontent.com/97494153/234884818-9153afbe-6bf1-4703-968f-c7d118fcc6f0.png) 
+![image](https://github.com/kbzhang0505/MBPNet/blob/main/fig_2.png) 
 Illustration of progressive network in the proposed MBPNet.
 
 ### Install ###
